@@ -14,16 +14,16 @@ for li in lists:
         dir = "neg"
     ok = True
     for l in range(1, len(li)):
-        if dir == "pos" and li[l] > li[l-1]:
-            diff = li[l] - li[l-1]
+        if dir == "pos" and li[l] > li[l - 1]:
+            diff = li[l] - li[l - 1]
             if diff > 3 or diff < 1:
                 if ok:
                     ok = False
                     pass
                 else:
                     break
-        elif dir == "neg" and li[l] < li[l-1]:
-            diff = li[l-1] - li[l]
+        elif dir == "neg" and li[l] < li[l - 1]:
+            diff = li[l - 1] - li[l]
             if diff > 3 or diff < 1:
                 if ok:
                     ok = False

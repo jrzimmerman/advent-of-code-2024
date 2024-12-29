@@ -1,6 +1,5 @@
-
 lines = []
-with open("./input.txt","r") as f:
+with open("./input.txt", "r") as f:
     lines = f.readlines()
 
 count = 0
@@ -20,7 +19,7 @@ right = sorted(right)
 for i in range(len(left)):
     l = left[i]
     r = right[i]
-    count += abs(r-l)
+    count += abs(r - l)
 # print(count)
 
 map = {}
